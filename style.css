@@ -9,7 +9,7 @@
 :root{
     --body-copy:18px;
 
-    --main-heading: calc(var(--body-copy) * 4);
+    --main-heading: calc(var(--body-copy) * 3.75);
     --sub-heading: calc(var(--body-copy) * 1.5);
     --smaller-sub-heading: calc(var(--body-copy) * 1.02);
     --line-height: calc(var(--body-copy)*1.5);
@@ -44,6 +44,7 @@ h1{
     font-size: var(--main-heading);
     line-height: calc(var(--line-height)*2.75);
     font-family: 'PP Agrandir';
+    margin-left: auto;
 }
 
 h2{
@@ -106,6 +107,23 @@ main{
     position: relative;
 }
 
+.circle-quote{
+    background-color: greenyellow;
+    position: relative;
+    left: 14px;
+    font-size: calc(var(--body-copy)/1.12);
+    padding: 40px;
+    padding-top: 85px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.red{
+    background-color: rgba(255, 0, 0, 0.734);
+    text-align: center;
+}
+
 @media (min-width: 1280px) {
     .scroll {
         display: flex;
@@ -128,7 +146,7 @@ main{
     flex: 0 0 auto;
     /* width: 85vw; */
     /* padding-right:1vw; */
-    height: 100vh;
+    /* height: 100vh; */
     margin-left: 20px;
     margin-right: 20px;
     /* margin-right: 20px; */
