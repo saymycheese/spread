@@ -1,0 +1,31 @@
+:root{
+    --body-copy:16px;
+    --page-spacing: 24px;
+
+    --main-heading: calc(var(--body-copy) * 2.5);
+    --sub-heading: calc(var(--body-copy) * 1.5);
+}
+
+@media (min-width: 1280px) {
+    :root{
+        --body-copy:20px;
+        --page-spacing: 36px;
+
+        --main-heading: calc(var(--body-copy) * 6);
+        --sub-heading: calc(var(--body-copy) * 3);
+    }
+}
+
+
+body{
+    font-family: sans-serif;
+    font-size: var(--body-copy);
+}
+
+h1{
+    font-size: var(--main-heading)
+}
+
+h2{
+    font-size: var(--sub-heading);
+}
