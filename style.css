@@ -7,8 +7,7 @@
 
 
 :root{
-    --body-copy:20px;
-    --page-spacing: 24px;
+    --body-copy:18px;
 
     --main-heading: calc(var(--body-copy) * 4);
     --sub-heading: calc(var(--body-copy) * 1.5);
@@ -20,7 +19,6 @@
 @media (min-width: 1280px) {
     :root{
         --body-copy:20px;
-        --page-spacing: 36px;
 
         --main-heading: calc(var(--body-copy) * 6);
         --sub-heading: calc(var(--body-copy) * 3);
