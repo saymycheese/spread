@@ -35,7 +35,7 @@ h2{
 }
 
 .scroll {
-    display: flex;
+    display:inline;
     flex-wrap: nowrap;
     overflow-x: auto;
     /* margin: 5vw */
@@ -43,11 +43,28 @@ h2{
 
 main{
     display: flex;
-    flex-direction: row;
-    margin: 100px;
+    flex-direction: column;
+    margin: 80px;
     /* gap: 10vw; */
     position:relative;
     top:-60px;
+}
+
+@media (min-width: 1280px) {
+    .scroll {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        /* margin: 5vw */
+    }
+        main{
+        display: flex;
+        flex-direction: row;
+        margin: 80px;
+        /* gap: 10vw; */
+        position:relative;
+        top:-60px;
+    }
 }
 
 p{
