@@ -1,16 +1,18 @@
 @font-face {
 	font-family: 'PP Agrandir';
 	src: url('PPAgrandir-TextBold.otf') format('truetype');
-	/* font-weight: 100; */
  }
+
+ @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
 
 :root{
     --body-copy:16px;
     --page-spacing: 24px;
 
-    --main-heading: calc(var(--body-copy) * 4.5);
+    --main-heading: calc(var(--body-copy) * 4);
     --sub-heading: calc(var(--body-copy) * 1.5);
+    --smaller-sub-heading: calc(var(--body-copy) * 1.02);
     --line-height: calc(var(--body-copy)*1.5);
     --circle-size: 300px;
 }
@@ -27,20 +29,46 @@
 
 
 body{
-    font-family: sans-serif;
+    background-color: white;
+    font-family: 'Libre Baskerville', serif;;
     font-size: var(--body-copy);
     line-height: var(--line-height);
     height: 100vh;
 }
 
+header{
+    margin-top: 60px;
+    /* margin-left: 20px; */
+}
+
+
 h1{
     font-size: var(--main-heading);
-    line-height: calc(var(--line-height)*3);
+    line-height: calc(var(--line-height)*2.75);
     font-family: 'PP Agrandir';
 }
 
 h2{
     font-size: var(--sub-heading);
+    line-height: calc(var(--line-height)*1.25);
+    margin-top: 20px;
+    font-style: italic;
+}
+
+h3{
+    font-size: var(--smaller-sub-heading);
+    line-height: calc(var(--line-height)*1.25);
+    margin-top: 20px;
+}
+
+p{
+    max-width: 50ch;
+    line-height: var(--line-height);
+    margin-top:20px;
+    margin-left: auto;
+    margin-right: auto;
+    /* hyphens: manual;
+    word-break: break-all; */
 }
 
 .scroll {
@@ -53,10 +81,10 @@ h2{
 main{
     display: flex;
     flex-direction: column;
-    margin: 80px;
+    /* margin-left: 20px; */
     /* gap: 10vw; */
     position:relative;
-    top:-60px;
+    /* top:-60px; */
 }
 
 .circle{
@@ -69,7 +97,8 @@ main{
 .circle-title{
     background-color: #FFE600;
     position: fixed;
-    top: 100px;
+    top: 60px;
+    left: calc(50% - 150px);
 }
 
 .circle-1{
@@ -96,21 +125,22 @@ main{
     }
 }
 
-p{
-    /* max-width: 45ch; */
-    line-height: var(--line-height);
-    margin-top:20px;
-}
 
 .card{
     flex: 0 0 auto;
-    width: 80vw;
-    padding-right:7vw;
+    /* width: 85vw; */
+    /* padding-right:1vw; */
     height: 100vh;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* margin-right: 20px; */
+    /* margin-left: 6px;
+    margin-right: 6px; */
     /* padding-bottom: 95%; */
     /* padding-top: 50px; */
 }
 
 .title{
     padding: 30px;
+    height:auto
 }
