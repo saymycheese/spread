@@ -7,7 +7,7 @@
 
 
 :root{
-    --body-copy:16px;
+    --body-copy:18px;
     --page-spacing: 24px;
 
     --main-heading: calc(var(--body-copy) * 4);
