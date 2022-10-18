@@ -2,8 +2,9 @@
     --body-copy:16px;
     --page-spacing: 24px;
 
-    --main-heading: calc(var(--body-copy) * 2.5);
+    --main-heading: calc(var(--body-copy) * 4.5);
     --sub-heading: calc(var(--body-copy) * 1.5);
+    --line-height: calc(var(--body-copy)*1.5);
 }
 
 @media (min-width: 1280px) {
@@ -20,12 +21,50 @@
 body{
     font-family: sans-serif;
     font-size: var(--body-copy);
+    line-height: var(--line-height);
+    height: 100vh;
 }
 
 h1{
-    font-size: var(--main-heading)
+    font-size: var(--main-heading);
+    line-height: calc(var(--line-height)*3);
 }
 
 h2{
     font-size: var(--sub-heading);
+}
+
+.scroll {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    /* margin: 5vw */
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin: 100px;
+    /* gap: 10vw; */
+    position:relative;
+    top:-60px;
+}
+
+p{
+    /* max-width: 45ch; */
+    line-height: var(--line-height);
+    margin-top:20px;
+}
+
+.card{
+    flex: 0 0 auto;
+    width: 80vw;
+    padding-right:7vw;
+    height: 100vh;
+    /* padding-bottom: 95%; */
+    /* padding-top: 50px; */
+}
+
+.title{
+    padding: 30px;
 }
