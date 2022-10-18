@@ -98,7 +98,7 @@ main{
     background-color: #FFE600;
     position: fixed;
     top: 60px;
-    left: calc(50% - 150px);
+    left: 35px;
 }
 
 .circle-1{
