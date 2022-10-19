@@ -70,6 +70,19 @@ p{
     word-break: break-all; */
 }
 
+em{
+    font-style: italic;
+}
+
+a{
+    text-decoration: underline;
+}
+
+a:hover{
+    color: #00ffe1;
+}
+
+
 .scroll {
     display:inline;
     flex-wrap: nowrap;
