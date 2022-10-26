@@ -115,6 +115,7 @@ a:hover{
 main{
     display: flex;
     flex-direction: column;
+    width: 450px;
     /* margin-left: 20px; */
     /* gap: 10vw; */
     position:relative;
@@ -312,6 +313,8 @@ blockquote{
    
 #dress-quote{
     margin-top: 2vh;
+    margin-left: -40px;
+    max-width: 22ch;
 }
 
 .red{
@@ -405,9 +408,11 @@ blockquote{
     }
 
     #dress-quote{
-        margin-top: 20vh;
+        margin-top: 18vh;
+        margin-left: 25vh;
         max-width: 25ch;
     }
+
     .circle{
         width: calc(var(--circle-size)*2);
         height: calc(var(--circle-size)*2);
@@ -547,6 +552,10 @@ blockquote{
         left: 10px;
     }
 
+    main{
+        width: 100%;
+    }
+
     h1{
         font-size: 55pt;
         line-height: 60pt;
@@ -592,7 +601,10 @@ blockquote{
 
     #dress-quote{
         margin-top: 30px;
+        max-width: 50ch;
+        margin-left: 30px;
     }
+    
 
     /* .ending{
         margin-top: 40px;
