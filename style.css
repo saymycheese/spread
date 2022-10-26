@@ -386,6 +386,10 @@ blockquote{
         max-width: 50ch;
     }
 
+    .print-quote{
+        display: none;
+    }
+
     .card{
         flex: 0 0 auto;
         /* margin-left: 20px;
@@ -602,7 +606,8 @@ blockquote{
     .circle{
         display: none;
     }
-    
+
+ 
     .circle-title{
         display: block;
         width: 300px;
@@ -614,19 +619,28 @@ blockquote{
     h1{
         font-size: 55pt;
         line-height: 60pt;
-        margin-left: 0px;
+        margin-left: 20px;
         margin-top: -20px;
     }
 
     h2{
         font-size: 20pt;
         line-height: 40pt;
-        margin-left: 0px;
+        margin-left: 20px;
     }
 
     h3{
         margin-top: 0px;
-        margin-left: 0px;
+        margin-left: 20px;
+    }
+
+    .print-quote{
+        display: block;
+        font-size: 12pt;
+        max-width: 55ch;
+        margin-top: 30px;
+        margin-left: 120px;
+        margin-bottom: -8px;
     }
 
     p{
@@ -640,8 +654,9 @@ blockquote{
         text-decoration: none;
     }
 
-    .print-margin{
-        margin-top: 30px;
+
+    .ending{
+        margin-top: 40px;
     }
     }
 
