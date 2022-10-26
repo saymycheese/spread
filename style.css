@@ -518,6 +518,11 @@ blockquote{
 
     .red{
         text-align: left;
+        mix-blend-mode: exclusion;
+    }
+
+    .blue{
+        mix-blend-mode: difference;
     }
 
     #author{
